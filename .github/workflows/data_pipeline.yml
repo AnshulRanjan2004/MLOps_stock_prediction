@@ -6,19 +6,7 @@ env:
   end: 1
 
 on:
-  # schedule:
-  #   - cron: "1 1 * * 1"
-
-  # push:
-    # branches: [data-upload-automation, main] # Can't trigger on push because github actions pushes changes
-  # pull_request:
-  #   branches: [ main ]
-  #   paths:
-  #   - .github/workflows/data_pipeline.yml
-  #   - jobs/data_download.py
-  #   - jobs/data_upload.yml
-  #   - cli/setup.sh
-
+  workflow_dispatch: # Add this line to enable manual triggering
 
 jobs:
   datawork:
