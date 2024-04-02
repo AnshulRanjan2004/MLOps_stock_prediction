@@ -6,8 +6,16 @@ env:
   end: 1
 
 on:
-  workflow_dispatch: # Add this line to enable manual triggering
-
+  push:
+    branches: 
+      - data-upload-automation
+      - main
+    paths:
+      - .github/workflows/data_pipeline.yml
+      - jobs/data_download.py
+      - jobs/data_upload.yml
+      - cli/setup.sh
+    
 jobs:
   datawork:
     runs-on: ubuntu-latest
