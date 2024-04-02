@@ -1,6 +1,6 @@
-GROUP="RG"
+GROUP="stock_prediction"
 LOCATION="eastus"
-WORKSPACE="AzureMLWorkspace"
+WORKSPACE="stock_prediction"
 
 az configure --defaults group=$GROUP workspace=$WORKSPACE location=$LOCATION
 
