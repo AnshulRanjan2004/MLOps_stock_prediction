@@ -49,6 +49,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git add -A
         git commit -m "Ticker data for $ticker downloaded and YAML file updated." || exit 0
+        git pull origin main
         git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
