@@ -1,14 +1,5 @@
 # Practical MLOps using Azure
 
-<h1> Hey there! I'm Anupam 👋 </h1>
-<h2> A data scientist from India 🇮🇳 </h2>
-
-<h3> 👨🏻‍💻 About Me </h3>
-
-- I work as a data scientist in the consulting industry.
-- I love solving problems and automating solutions.
-- I love music and travelling!
-
 # Project description
 
 This project implements automated MLOps. Every week it fetches data via an API, registers the data as a dataset in Azure datastore. It updates the versions of required pipeline components like run ID, model version etc.. Then it trains the registers a pytorch LSTM model in Azure ML studio. This model is then deployed to an online endpoint. Everything is done through cron jobs.
