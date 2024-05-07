@@ -5,9 +5,6 @@ env:
   compute_name: computer456
   registered_model_name: GA_model
 
-on:
-  schedule:
-   - cron: "1 2 * * 1"
 
   push:
      branches: [training-automation, main]
